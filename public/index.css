@@ -1,0 +1,33 @@
+.hidden {
+  display: none !important;
+}
+body {
+  margin: 0;
+}
+#app {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  font-family: "Gill Sans", sans-serif;
+}
+.videoWrap {
+  display: grid;
+  place-items: center;
+}
+footer {
+  place-items: center;
+  text-align: center;
+  background-color: #FFFC99;
+  margin-top: 0.5em;
+}
+header {
+  place-items: center;
+  text-align: center;
+  background-color: #FFFC99;
+  margin-bottom: 0.5em;
+}
+header h1 {
+  margin-bottom: 0;
+}
+header p {
+  margin-top: 0;
+}
