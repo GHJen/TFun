@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/GHJen/TFun/issues"
   },
-  "homepage": "https://github.com/GHJen/TFun#readme",
+  "homepage": ".",
   "dependencies": {
     "@babel/polyfill": "^7.11.5",
     "@babel/preset-react": "^7.10.4",
