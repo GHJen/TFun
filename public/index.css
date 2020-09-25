@@ -66,6 +66,9 @@ header p {
   height: 50px;
   width: 50px;
 }
+.white {
+  background-color: transparent;
+}
 .red {
   background-color: rgba(255, 0, 0, 0.699);
 }
