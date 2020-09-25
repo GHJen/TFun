@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import RainbowLoader from './RainbowLoader'
 import {connect} from 'react-redux';
 import {gotModel, gotPredictions} from '../store';
+import Learn from './Learn';
+import Color from './Color';
 
 class Video extends Component {
   constructor() {
@@ -23,12 +25,14 @@ class Video extends Component {
 
   render() {
     const {isLoading} = this.state;
-    console.log('from component video', isLoading)
+    const {prediction, game} = this.props
     return (
       <div id='videoDiv'>
-      <RainbowLoader className={isLoading ? '' : 'hidden'} />
-      <video autoPlay ref={this.streamRef} className={isLoading ? 'hidden' : ''} />
-      <p>{this.props.prediction}</p>
+        {isLoading && <RainbowLoader />}
+        <video autoPlay ref={this.streamRef} className = {isLoading ? 'hidden' : ''} />
+        <p> {prediction ? '' : 'Wave to start!'} </p>
+        {game.name === 'learn' ? <Learn /> : ''}
+        {game.name === 'color' ? <Color /> : ''}
       </div>
     )
   }
@@ -37,6 +41,7 @@ const mSTP = state => {
   return {
     model: state.model.model,
     prediction: state.model.prediction,
+    game: state.game
   }
 }
 const mDTP = dispatch => {

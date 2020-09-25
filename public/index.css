@@ -4,6 +4,15 @@
 body {
   margin: 0;
 }
+#navbar {
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+}
+#navbar .selected {
+  text-decoration: underline;
+  color: rgb(58, 57, 57);
+}
 #app {
   display: grid;
   grid-template-rows: auto 1fr auto;
@@ -30,4 +39,60 @@ header h1 {
 }
 header p {
   margin-top: 0;
+}
+
+#learn {
+  justify-content: space-around;
+}
+#congrats {
+  display: flex;
+}
+#congrats p {
+  background-color: #FFFC99;
+  cursor: pointer;
+  padding: 1em 1em 1em 1em;
+}
+
+#colors {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 50% 50%;
+}
+#singleColor {
+  display: flex;
+
+}
+#square {
+  height: 50px;
+  width: 50px;
+}
+.red {
+  background-color: rgba(255, 0, 0, 0.699);
+}
+.pink {
+  background-color: rgb(241, 177, 188)
+}
+.orange {
+  background-color: orange;
+}
+.yellow {
+  background-color: rgb(255, 255, 100);
+}
+.green {
+  background-color: green;
+}
+.blue {
+  background-color: rgb(52, 52, 243);
+}
+.indigo {
+  background-color: indigo;
+}
+.violet {
+  background-color: rgb(110, 34, 110);
+}
+.magenta {
+  background-color: magenta;
+}
+.black {
+  background-color: black;
 }

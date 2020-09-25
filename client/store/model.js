@@ -15,7 +15,7 @@ const GET_PREDICTIONS = 'GET_PREDICTIONS'
  */
 const defaultModel = {
   model: null,
-  prediction: 0
+  prediction: 0,
 };
 
 /**
@@ -42,17 +42,16 @@ export const gotPredictions = (model, video) => async dispatch => {
         const predictions = await model.estimateHands(video, true);
         if (predictions.length>0) {
           const estimatedGestures = GE.estimate(predictions[0].landmarks, 7.5).gestures
-          let matchGesture = 0;
+          let matchGesture = {}
           for (const gesture of estimatedGestures) {
-            // if (gesture.confidence > matchGesture.confidence) matchGesture = gesture
+            if (!matchGesture.confidence || gesture.confidence > matchGesture.confidence) matchGesture = gesture
           }
-          console.log(estimatedGestures);
           dispatch(getPredictions(matchGesture.name));
+          setTimeout(null, 100)
         }
-        // reqAnim =
-        requestAnimationFrame(predict);
+        let rAF = requestAnimationFrame(predict);
       }
-      predict();
+      predict()
     }
   } catch (err) {
     console.error(err)
