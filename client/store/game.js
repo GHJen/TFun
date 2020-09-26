@@ -10,7 +10,7 @@ export const GET_NAME = 'GET_NAME';
  * INITIAL STATE
  */
 const defaultGame = {
-  name: 'learn',
+  name: '',
 };
 
 /**

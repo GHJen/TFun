@@ -31,6 +31,7 @@ class Video extends Component {
         {isLoading && <RainbowLoader />}
         <video autoPlay ref={this.streamRef} className = {isLoading ? 'hidden' : ''} />
         <p> {prediction ? '' : 'Wave to start!'} </p>
+        {game.name==='' ? <h3>Choose a game above to start!</h3> : ''}
         {game.name === 'learn' ? <Learn /> : ''}
         {game.name === 'color' ? <Color /> : ''}
       </div>
