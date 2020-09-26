@@ -1,5 +1,3 @@
-const path = require('path');
-
 module.exports = {
   entry: [
     '@babel/polyfill', // enables async-await
@@ -7,7 +5,7 @@ module.exports = {
   ],
   mode: 'development',
   output: {
-    path: path.resolve(__dirname),
+    path: __dirname,
     filename: 'bundle.js'
   },
   module: {
