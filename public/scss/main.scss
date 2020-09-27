@@ -1,7 +1,3 @@
-@import './colorGame';
-@import './header';
-@import './footer';
-@import './learnGame';
 
 $primary-color: #FFFC99;
 
@@ -10,6 +6,7 @@ $primary-color: #FFFC99;
   justify-content: space-around;
   align-items: center;
 }
+
 
 .hidden {
   display: none !important;
@@ -26,3 +23,8 @@ body {
   display: grid;
   place-items: center;
 }
+
+@import './colorGame';
+@import './header';
+@import './footer';
+@import './learnGame';
