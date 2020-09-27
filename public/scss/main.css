@@ -1,0 +1,99 @@
+#colors {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 20% 20% 20% 20%;
+      grid-template-columns: 20% 20% 20% 20% 20%;
+  -ms-grid-rows: 50% 50%;
+      grid-template-rows: 50% 50%;
+}
+
+#colors #singleColor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0.5em;
+}
+
+#colors #square {
+  height: 25px;
+  width: 25px;
+}
+
+.white {
+  background-color: white;
+}
+
+.red {
+  background-color: rgba(255, 0, 0, 0.699);
+}
+
+.pink {
+  background-color: #f1b1bc;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.yellow {
+  background-color: #ffff64;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: #3434f3;
+}
+
+.indigo {
+  background-color: indigo;
+}
+
+.violet {
+  background-color: #6e226e;
+}
+
+.magenta {
+  background-color: magenta;
+}
+
+.black {
+  background-color: black;
+  color: white;
+}
+
+header {
+  place-items: center;
+  text-align: center;
+  background-color: #FFFC99;
+  margin-bottom: 0.5em;
+}
+
+header h1 {
+  margin-bottom: 0;
+}
+
+header p {
+  margin-top: 0;
+}
+
+footer {
+  place-items: center;
+  text-align: center;
+  background-color: #FFFC99;
+  margin-top: 0.5em;
+}
+
+.hidden {
+  display: none !important;
+}
+
+body {
+  margin: 0;
+}
+/*# sourceMappingURL=main.css.map */

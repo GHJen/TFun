@@ -1,0 +1,12 @@
+#learn {
+  justify-content: space-between;
+}
+#congrats {
+  @include flexCenter;
+
+  p {
+    background-color: $primary-color;
+    cursor: pointer;
+    padding: 1em 1em 1em 1em;
+  }
+}

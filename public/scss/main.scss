@@ -1,0 +1,28 @@
+@import './colorGame';
+@import './header';
+@import './footer';
+@import './learnGame';
+
+$primary-color: #FFFC99;
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hidden {
+  display: none !important;
+}
+body {
+  margin: 0;
+}
+#app {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  font-family: "Gill Sans", sans-serif;
+}
+.videoWrap {
+  display: grid;
+  place-items: center;
+}

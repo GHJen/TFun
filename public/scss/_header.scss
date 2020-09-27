@@ -1,0 +1,22 @@
+header {
+  place-items: center;
+  text-align: center;
+  background-color: $primary-color;
+  margin-bottom: 0.5em;
+
+  h1 {
+    margin-bottom: 0;
+  }
+  p {
+    margin-top: 0;
+  }
+}
+#navbar {
+  @include flexCenter;
+  cursor: pointer;
+
+  .selected {
+    text-decoration: underline;
+    color: rgb(58, 57, 57);
+  }
+}

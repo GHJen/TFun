@@ -1,0 +1,48 @@
+#colors {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 50% 50%;
+
+  #singleColor {
+    @include flexCenter;
+    margin: 0.5em;
+  }
+  #square {
+    height: 25px;
+    width: 25px;
+  }
+}
+.white {
+  background-color: white;
+}
+.red {
+  background-color: rgba(255, 0, 0, 0.699);
+}
+.pink {
+  background-color: rgb(241, 177, 188)
+}
+.orange {
+  background-color: orange;
+}
+.yellow {
+  background-color: rgb(255, 255, 100);
+}
+.green {
+  background-color: green;
+}
+.blue {
+  background-color: rgb(52, 52, 243);
+}
+.indigo {
+  background-color: indigo;
+}
+.violet {
+  background-color: rgb(110, 34, 110);
+}
+.magenta {
+  background-color: magenta;
+}
+.black {
+  background-color: black;
+  color: white;
+}
