@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { useSelector } from 'react-redux';
 import { getRandomGesture } from '../utils';
+import GestureImg from './GestureImg';
 
 const learn = () => {
   const [gesture, setGesture] = useState(getRandomGesture);
