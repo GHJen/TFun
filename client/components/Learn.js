@@ -11,7 +11,10 @@ const learn = () => {
       <div id='congrats'>
         <h4>That's right!</h4>
         <p onClick={()=> setGesture(getRandomGesture)}> Click to guess again! </p>
-      </div> : <h4> Try to make: {gesture}</h4> }
+      </div> : <div id='task'>
+      <h4> Try to make: {gesture}</h4>
+      <GestureImg gesture={gesture} />
+      </div> }
     </div>
   )
 }

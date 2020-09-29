@@ -136,7 +136,7 @@ footer {
           justify-content: space-between;
 }
 
-#congrats {
+#learn #task {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -147,7 +147,18 @@ footer {
           align-items: center;
 }
 
-#congrats p {
+#learn #congrats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#learn #congrats p {
   background-color: #FFFC99;
   cursor: pointer;
   padding: 1em 1em 1em 1em;
