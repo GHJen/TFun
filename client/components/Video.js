@@ -4,6 +4,7 @@ import {connect} from 'react-redux';
 import {gotModel, gotPredictions} from '../store';
 import Learn from './Learn';
 import Color from './Color';
+import Music from './Music';
 
 class Video extends Component {
   constructor() {
@@ -34,6 +35,7 @@ class Video extends Component {
         {game.name==='' ? <h3>Choose a game above to start!</h3> : ''}
         {game.name === 'learn' ? <Learn /> : ''}
         {game.name === 'color' ? <Color /> : ''}
+        {game.name === 'music' ? <Music /> : ''}
       </div>
     )
   }

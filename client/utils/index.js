@@ -13,7 +13,7 @@ export const predictionIndex = {
   'ten' : 10
 }
 export const colors = ['white', 'red', 'pink', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet', 'magenta', 'black']
-export const gestureImgs = [];
+export const tones = ['', 'C', 'D', 'E', 'F', 'G', 'A', 'B', 'UpperC', '', '']
 
 export const getRandomGesture = () => {
   const i = Math.floor((Math.random() * 10) + 1);
@@ -25,6 +25,10 @@ export const getI = (prediction) => {
 export const getColor = (prediction) => {
   const i = getI(prediction);
   return colors[i];
+}
+export const getMusic = (prediction) => {
+  const i = getI(prediction);
+  return tones[i];
 }
 
 export const playGame = () => {
